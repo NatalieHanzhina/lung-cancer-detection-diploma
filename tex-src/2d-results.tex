@@ -1,5 +1,9 @@
 \chapter{Результаты решения задачи 2D сегментации}
 
+\section{Данные}
+
+В качестве датасета использовался LIDC-IDRI \cite{lidc} - открытый набор данных в формате DICOM, размеченный 4-мя радиологами. Всего в датасете содержится 1018 сканов и более 7000 новообразований. Новообразование включалось в размеченное множество, если оно было выявлено хотя бы одним из специалистов.
+
 
 \section{Детали реализации}
 
@@ -49,7 +53,7 @@ $$ dice(y_{true}, y_{pred}) = \dfrac{2 * |y_{true} \cap y_{pred}|}{ |y_{true}| +
 \section{Визуальный анализ}
 
 \begin{figure}[!h]
-\includegraphics[width=\linewidth]{2d-seg-results.png}
+\includegraphics[width=\linewidth]{images/2d-seg-results.png}
 \caption{Результаты работы сети}\label{mirskiy-cgan-architecture}
 \centering
 \end{figure}

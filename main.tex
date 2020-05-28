@@ -21,62 +21,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 
-\begin{filecontents}{bachelor-thesis.bib}
-@online{ doerr-doerr-lambda-lambda-self-adjustment-arxiv,
-    year        = {2015},
-    title       = {Optimal Parameter Choices Through Self-Adjustment: Applying the 1/5-th Rule in
-                   Discrete Settings},
-    author      = {Benjamin Doerr and Carola Doerr},
-    url         = {http://arxiv.org/abs/1504.03212},
-    year        = {2015},
-    langid      = {english}
-}
-
-@inproceedings{ example-english,
-    year        = {2015},
-    booktitle   = {Proceedings of IEEE Congress on Evolutionary Computation},
-    author      = {Maxim Buzdalov and Anatoly Shalyto},
-    title       = {Hard Test Generation for Augmenting Path Maximum Flow 
-                   Algorithms using Genetic Algorithms: Revisited},
-    pages       = {2121-2128},
-    langid      = {english}
-}
-
-@article{ example-russian,
-    author      = {Максим Викторович Буздалов},
-    title       = {Генерация тестов для олимпиадных задач по программированию 
-                   с использованием генетических алгоритмов},
-    journal     = {Научно-технический вестник {СПбГУ} {ИТМО}},
-    number      = {2(72)},
-    year        = {2011},
-    pages       = {72-77},
-    langid      = {russian}
-}
-
-@article{ unrestricted-jump-evco,
-    author      = {Maxim Buzdalov and Benjamin Doerr and Mikhail Kever},
-    title       = {The Unrestricted Black-Box Complexity of Jump Functions},
-    journal     = {Evolutionary Computation},
-    year        = {2016},
-    note        = {Accepted for publication},
-    langid      = {english}
-}
-
-@book{ bellman,
-    author      = {R. E. Bellman},
-    title       = {Dynamic Programming},
-    address     = {Princeton, NJ},
-    publisher   = {Princeton University Press},
-    numpages    = {342},
-    pagetotal   = {342},
-    year        = {1957},
-    langid      = {english}
-}
-\end{filecontents}
-%% Конец
-
-%% Указываем файл с библиографией.
-\addbibresource{bachelor-thesis.bib}
+\input{tex-src/bibliography}
 
 \begin{document}
 
@@ -142,25 +87,25 @@
 
 В данном разделе размещается введение.
 
-\input{introduction}
+\input{tex-src/introduction}
 
 %% Начало содержательной части.
 \chapter{Обзор предметной области}
 
 %% Так помечается начало обзора.
 \startrelatedwork
-\input{relatedworks}
+\input{tex-src/relatedworks}
 Пример ссылок в рамках обзора: 
 %% Так помечается конец обзора.
 \finishrelatedwork
 
-\input{2d-segmentation}
+\input{tex-src/2d-segmentation}
 
-\input{3d-detection}
+\input{tex-src/3d-detection}
 
-\input{2d-results}
+\input{tex-src/2d-results}
 
-\input{3d-results}
+\input{tex-src/3d-results}
 
 
 %% Макрос для заключения. Совместим со старым стилевиком.
